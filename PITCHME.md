@@ -47,8 +47,21 @@ Kotlin presentation
 * Similar concept applies for class properties 
 
 ```java
-val a: Int = 1 val b = 1 val c: Int c = 1 val
+val a: Int = 1
+val b = 1 
+val c: Int c = 1 
+val x = 23 // fails x += 1 
 ```
+---
+## STRING TEMPLATES 
+
+* Kotlin Strings can contain template expressions
+* String templates start with a $ character and 
+ * can contain simple references such as ```$s```, as well as 
+ * complex expressions in curly braces: ```${s.length}```
+ 
+ val s = "abc" val str = "$s.length is ${s.length}" Output: abc.length is 3 IDIOMS & LANGUAGE PATTERNS 
+
 ---
 
 ## Thanks 
