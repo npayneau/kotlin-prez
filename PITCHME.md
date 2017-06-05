@@ -6,7 +6,7 @@ Kotlin presentation
 
 ---
 
-# Who am I ?
+## Who am I ?
 
 * Nicolas Payneau
 * 8 years experience
