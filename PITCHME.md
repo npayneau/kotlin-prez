@@ -32,6 +32,7 @@ Kotlin presentation
 ---
 ## The advantages of kotlin
 
+| ------------ | --------------- | ------------ |
 | Immutability |String templates  | Null safety |
 | Properties and Fields | Data classes | Extension functions | 
 |Syntactic sugar | Type inference | Lambdas |
@@ -39,21 +40,20 @@ Kotlin presentation
 
 ---
 ## IMMUTABILITY
-<div>
+
 * Support for mutable and immutable variables, properties and ﬁelds 
 * Keywords var and val 
   * val - immutable (recommended)
   * var - mutable 
 * Similar concept applies for class properties 
-</div>
-<div>
+
 ```java
 val a: Int = 1
 val b = 1 
 val c: Int c = 1 
 val x = 23 // fails x += 1 
 ```
-</div>
+
 ---
 ## STRING TEMPLATES 
 
@@ -61,10 +61,42 @@ val x = 23 // fails x += 1
 * String templates start with a $ character and 
  * can contain simple references such as ```$s```, as well as 
  * complex expressions in curly braces: ```${s.length}```
- 
- val s = "abc" val str = "$s.length is ${s.length}" Output: abc.length is 3 IDIOMS & LANGUAGE PATTERNS 
 
+```java 
+ val s = "abc" 
+ val str = "$s.length is ${s.length}"
+ 
+ Output: abc.length is 3 IDIOMS & LANGUAGE PATTERNS 
+```
 ---
+## NULL SAFETY
+* An explicit way to deal with NPEs
+* Nullable types vs non-nullable types:
+ * String: no nullable
+ * String?: nullable 
+* Handle manually
+* Use Safe Call operator ?. 
+* !! operator to allow/trigger a NPE 
+
+```java
+// Won't compile 
+var lastName: String = null 
+
+// Will compile 
+var lastNameNullable: String? = null
+
+// Will also not compile 
+println(lastNameNullable.length) 
+
+// Option 1 (-1) 
+println(if (lastNameNullable != null) lastNameNullable.length else -1) 
+
+// Option 2 (null) 
+println(lastNameNullable?.length) 
+
+// Option 3 (NPE) 
+println(lastNameNullable!!.length) 
+```
 
 ## Thanks 
 
