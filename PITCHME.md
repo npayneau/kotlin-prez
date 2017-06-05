@@ -5,10 +5,10 @@ Kotlin presentation
 ---
 ## Who am I ?
 
-- Nicolas Payneau
-- 8 years experience
-- Code lover
-- Follow me on twitter @npayneau
+- Nicolas Payneau |
+- 8 years experience |
+- Code lover |
+- Follow me on twitter @npayneau |
 ---
 ## What is this Kotlin ?
 
