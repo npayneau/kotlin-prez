@@ -42,12 +42,13 @@ Kotlin presentation
 
 * Support for mutable and immutable variables, properties and ﬁelds 
 * Keywords var and val 
-** val - immutable (recommended)
-** var - mutable 
+  * val - immutable (recommended)
+  * var - mutable 
 * Similar concept applies for class properties 
 
+```java
 val a: Int = 1 val b = 1 val c: Int c = 1 val
-
+```
 ---
 
 ## Thanks 
