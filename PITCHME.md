@@ -1,6 +1,7 @@
 ---
 
-Présentation Kotlin
+![Logo](
+Kotlin presentation
 
 ---
 
@@ -14,4 +15,6 @@ Présentation Kotlin
 
 # What is this Kotlin ?
 
-* 
+* A programming language
+* Object Oriented
+* Functionnal
